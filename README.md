@@ -2,6 +2,9 @@
 
 This extension for Visual Studio Code adds snippets for Shopify Liquid Template.
 
+
+[VS Code Market](https://marketplace.visualstudio.com/items?itemName=Youhan.vscode-snippets-shopify-content-schema)
+
 ## Preview
 
 ## Prerequisite
