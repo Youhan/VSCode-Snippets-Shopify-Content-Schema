@@ -34,15 +34,269 @@
     "description": "liquid content schema text"
   },
   "liq-checkbox": {
-    "prefix": "checkbox",
+    "prefix": "liq-checkbox",
     "body": [
       "{",
       "  \"type\": \"checkbox\",",
       "  \"id\": \"${1:example}\",",
-      "  \"label\": \"${1:example}\",",
+      "  \"label\": \"${2:example}\",",
       "  \"default\": true",
       "}"
     ],
     "description": "liq-checkbox"
+  },
+  "liq-radio": {
+    "prefix": "liq-radio",
+    "body": [
+      "{",
+      "  \"type\": \"radio\",",
+      "  \"id\": \"${1:example}\",",
+      "  \"label\": \"${2:example}\",",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${3:example}\",",
+      "      \"label\": \"${4:example}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${5:example}\",",
+      "      \"label\": \"${6:example}\"",
+      "    }",
+      "  ],",
+      "  \"default\": \"${3:example}\"",
+      "}"
+    ],
+    "description": "liq-radio"
+  },
+  "liq-range": {
+    "prefix": "liq-range",
+    "body": [
+      "{",
+      "  \"type\": \"range\",",
+      "  \"id\": \"${1:example}\",",
+      "  \"label\": \"${2:example}\",",
+      "  \"min\": ${3:example},",
+      "  \"max\": ${4:example},",
+      "  \"step\": ${5:example},",
+      "  \"default\": ${6:example},",
+      "  \"info: \"${7:example}\"",
+      "}"
+    ],
+    "description": "liq-range"
+  },
+  "liq-select": {
+    "prefix": "liq-select",
+    "body": [
+      "{",
+      "  \"type\": \"select\",",
+      "  \"id\": \"${1:example}\",",
+      "  \"label\": \"${2:example}\",",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${3:example}\",",
+      "      \"label\": \"${4:example}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${5:example}\",",
+      "      \"label\": \"${6:example}\"",
+      "    }",
+      "  ],",
+      "  \"default\": \"${3:example}\"",
+      "}"
+    ],
+    "description": "liq-select"
+  },
+  "liq-header": {
+    "prefix": "liq-header",
+    "body": [
+      "{",
+      "  \"type\": \"header\",",
+      "  \"content\": \"${1:example}\"",
+      "}"
+    ],
+    "description": "liq-header"
+  },
+  "liq-html": {
+    "prefix": "liq-html",
+    "body": [
+      "{",
+      "   \"type\": \"html\",",
+      "   \"id\": \"${1:example}\",",
+      "   \"label\": \"${2:Custom HTML}\",",
+      "   \"default\": \"${3:<div><p>Some HTML content</p></div>}\"",
+      "}"
+    ],
+    "description": "liq-html"
+  },
+  "liq-video-url": {
+    "prefix": "liq-video-url",
+    "body": [
+      "{",
+      "  \"id\": \"${1:video_url}\",",
+      "  \"type\": \"video_url\",",
+      "  \"label\": \"${2:Video URL}\",",
+      "  \"accept\": [\"youtube\", \"vimeo\"],",
+      "  \"default\": \"https://www.youtube.com/watch?v=_9VUPq3SxOc\",",
+      "  \"info\": \"${3:Text}\",",
+      "  \"placeholder\": \"${4:Text}\"",
+      "}"
+    ],
+    "description": "liq-video-url"
+  },
+  "liq-page": {
+    "prefix": "liq-page",
+    "body": [
+      "{",
+      "  \"type\": \"page\",",
+      "  \"id\": \"${1:id}\",",
+      "  \"label\": \"${2:Text}\",",
+      "  \"info\": \"${3:Text}\"",
+      "}"
+    ],
+    "description": "liq-page"
+  },
+  "liq-article": {
+    "prefix": "liq-article",
+    "body": [
+      "{",
+      "  \"type\": \"article\",",
+      "  \"id\": \"${1:featured_article}\",",
+      "  \"label\": \"${2:Article to feature on the home page}\"",
+      "}"
+    ],
+    "description": "liq-article"
+  },
+  "liq-blog": {
+    "prefix": "liq-blog",
+    "body": [
+      "{",
+      "  \"type\": \"blog\",",
+      "  \"id\": \"${1:id}\",",
+      "  \"label\": \"${2:Text}\",",
+      "  \"info\": \"${3:Text}\"",
+      "}"
+    ],
+    "description": "liq-blog"
+  },
+  "liq-product": {
+    "prefix": "liq-product",
+    "body": [
+      "{",
+      "  \"type\": \"product\",",
+      "  \"id\": \"${1:id}\",",
+      "  \"label\": \"${2:Text}\",",
+      "  \"info\": \"${3:Text}\"",
+      "}"
+    ],
+    "description": "liq-product"
+  },
+  "liq-collection": {
+    "prefix": "liq-collection",
+    "body": [
+      "{",
+      "  \"type\": \"collection\",",
+      "  \"id\": \"${1:id}\",",
+      "  \"label\": \"${2:Text}\",",
+      "  \"info\": \"${3:Text}\"",
+      "}"
+    ],
+    "description": "liq-collection"
+  },
+  "liq-image_picker": {
+    "prefix": "liq-image_picker",
+    "body": [
+      "{",
+      "  \"type\": \"image_picker\",",
+      "  \"id\": \"${1:logo}\",",
+      "  \"label\": \"${2:Logo image}\"",
+      "  \"info\" \"${3:Description}\"",
+      "}"
+    ],
+    "description": "liq-image_picker"
+  },
+  "liq-richtext": {
+    "prefix": "liq-richtext",
+    "body": [
+      "{",
+      "  \"type\": \"richtext\",",
+      "  \"id\": \"${1:column_richtext}\",",
+      "  \"label\": \"${1:Text}\",",
+      "  \"default\": \"${1:<p>Default <em>richtext</em> <a href=\\\"https://example.com/\\\">content</a></p>}\"",
+      "}"
+    ],
+    "description": "liq-richtext"
+  },
+  "liq-textarea": {
+    "prefix": "liq-textarea",
+    "body": [
+      "{",
+      "  \"type\": \"textarea\",",
+      "  \"id\": \"${1:id}\",",
+      "  \"label\": \"${2:Text}\",",
+      "  \"default\": \"${3:value}\",",
+      "  \"info\": \"${4:Text}\",",
+      "  \"placeholder\": \"${5:Text}\"",
+      "}"
+    ],
+    "description": "liq-textarea"
+  },
+  "liq-paragraph": {
+    "prefix": "liq-paragraph",
+    "body": [
+      "{",
+      "  \"type\": \"paragraph\",",
+      "  \"content\": \"${1:Text}\",",
+      "  \"info\": \"${1:Description}\"",
+      "}"
+    ],
+    "description": "liq-paragraph"
+  },
+  "liq-url": {
+    "prefix": "liq-url",
+    "body": [
+      "{",
+      "  \"type\": \"url\",",
+      "  \"id\": \"${1:banner_call_to_action}\",",
+      "  \"label\": \"${1:Banner button link}\",",
+      "  \"info\": \"${1:Description}\"",
+      "}"
+    ],
+    "description": "liq-url"
+  },
+  "liq-font_picker": {
+    "prefix": "liq-font_picker",
+    "body": [
+      "{",
+      "  \"type\": \"font_picker\",",
+      "  \"label\": \"${1:Text}\",",
+      "  \"id\": \"${2:id}\",",
+      "  \"info\": \"${3:Text}\",",
+      "  \"default\": \"${4:helvetica_n4}\"",
+      "}"
+    ],
+    "description": "liq-font_picker"
+  },
+  "liq-color": {
+    "prefix": "liq-color",
+    "body": [
+      "{",
+      "  \"type\": \"color\",",
+      "  \"id\": \"${1:id}\",",
+      "  \"label\": \"${2:Text}\",",
+      "  \"default\": \"${3:value}\",",
+      "  \"info\": \"${4:Text}\"",
+      "}"
+    ],
+    "description": "liq-color"
+  },
+  "liq-link_list": {
+    "prefix": "liq-link_list",
+    "body": [
+      "{",
+      "  \"type\": \"link_list\",",
+      "  \"id\": \"${1:main_nav}\",",
+      "  \"label\": \"${1:Main navigation}\"",
+      "}"
+    ],
+    "description": "liq-link_list"
   }
 }
