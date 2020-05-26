@@ -1,4 +1,26 @@
 {
+  "liq-schema": {
+    "prefix": "liq-schema",
+    "body": [
+      "{% schema %}",
+      "{",
+      "    \"name\": {",
+      "        \"en\": \"Carousel\"",
+      "    },",
+      "    \"settings\": [",
+      "",
+      "    ],",
+      "    \"presets\": [",
+      "    {",
+      "        \"name\": \"Carousel\",",
+      "        \"category\": \"Carousel\"",
+      "    }",
+      "  ]",
+      "}",
+      "{% endschema %}"
+    ],
+    "description": "liq-schema"
+  },
   "liq-text": {
     "prefix": "liq-text",
     "body": [
@@ -10,5 +32,17 @@
       "},"
     ],
     "description": "liquid content schema text"
+  },
+  "liq-checkbox": {
+    "prefix": "checkbox",
+    "body": [
+      "{",
+      "  \"type\": \"checkbox\",",
+      "  \"id\": \"${1:example}\",",
+      "  \"label\": \"${1:example}\",",
+      "  \"default\": true",
+      "}"
+    ],
+    "description": "liq-checkbox"
   }
 }
