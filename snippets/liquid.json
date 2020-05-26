@@ -1,0 +1,14 @@
+{
+  "liq-text": {
+    "prefix": "liq-text",
+    "body": [
+      "{",
+      "     \"type\": \"text\",",
+      "     \"id\": \"${1:unique_id}\",",
+      "     \"label\": \"${2:Label}\",",
+      "     \"info\": \"${3:Info}\"",
+      "},"
+    ],
+    "description": "liquid content schema text"
+  }
+}
