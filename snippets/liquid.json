@@ -78,7 +78,7 @@
         "  \"max\": ${4:example},",
         "  \"step\": ${5:example},",
         "  \"default\": ${6:example},",
-        "  \"info: \"${7:example}\"",
+        "  \"info\" : ${7:example}\"",
         "}"
       ],
       "description": "liq-range"
@@ -208,7 +208,7 @@
         "  \"type\": \"image_picker\",",
         "  \"id\": \"${1:logo}\",",
         "  \"label\": \"${2:Logo image}\"",
-        "  \"info\" \"${3:Description}\"",
+        "  \"info\": \"${3:Description}\"",
         "}"
       ],
       "description": "liq-image_picker"
